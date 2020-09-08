@@ -39,7 +39,7 @@ function  getHotels( pageValue){
       '<div class="hotel_box"><ul><li><img src="' + hotels[i].hotel[0].hotelBasicInfo. hotelImageUrl + '"></li>'+
       '<li>' + hotels[i].hotel[0].hotelBasicInfo.hotelName + '</li>'+
       '<li>' + hotels[i].hotel[0].hotelBasicInfo.hotelKanaName + '</li>'+
-      '<li>' + hotels[i].hotel[0].hotelBasicInfo.address2 + '</li>';
+      '<li>' + hotels[i].hotel[0].hotelBasicInfo.address2 + '</li><li><ul style="display:inline-flex;">';
       /*レビューの表示*/
       for(let j = 0; j < num1; j++){
          contents +='<li><img src="../img/star2.png" alt="星（黄）" class="image1 image"></li>';
@@ -49,7 +49,7 @@ function  getHotels( pageValue){
       }
       /*料金とリンクボタンの表示*/
       contents +=
-      '<li>' + hotels[i].hotel[0].hotelBasicInfo.telephoneNo + '</li>'+
+      '</ul></li><li>' + hotels[i].hotel[0].hotelBasicInfo.telephoneNo + '</li>'+
       '<li><div class="hotel_child"><p>最安料金￥' + hotels[i].hotel[0].hotelBasicInfo.hotelMinCharge + '～</p><li>'+
       '<li><a href ="' + hotels[i].hotel[0].hotelBasicInfo.hotelInformationUrl + '"> 詳細情報へ</a></div></div></li></ul>';
       $('#list').append(contents);

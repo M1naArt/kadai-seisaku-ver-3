@@ -9,14 +9,14 @@ body{
   background-repeat: no-repeat;
   ul{
     padding: 0;
-    width: 50vw;
-    line-height: 2.5rem;
+    //width: 50vw;
+    //line-height: 2.5rem;
     li{
       list-style-type:none;
     }
 
     /*施設名*/
-    :nth-child(1){
+    :nth-child(2){
       font-size: 1.5rem;
       font-weight: bold;
     }  
@@ -30,8 +30,8 @@ body{
   height: auto;
   /*施設画像*/
   img{
-    height: 18rem;
-    width: 18rem;
+    height: 17rem;
+    width: 20rem;
   }
   /*レビュー☆*/
   .image{
@@ -43,7 +43,7 @@ body{
   .hotel_child{
     p{
       margin: 0;
-      margin-bottom:7rem;
+      //margin-bottom:7rem;
     }
     a{
       text-decoration: none;
