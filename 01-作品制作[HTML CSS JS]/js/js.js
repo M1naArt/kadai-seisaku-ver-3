@@ -36,7 +36,7 @@ function  getHotels( pageValue){
       let num2  = 5 - num1;
       /*店舗名～住所の表示*/
       contents +=
-      '<div class="hotel_box"><ul><li><img src="' + hotels[i].hotel[0].hotelBasicInfo. hotelImageUrl + '"></li>'+
+      '<div class="hotel_box"><ul><li><img src="' + hotels[i].hotel[0].hotelBasicInfo. hotelImageUrl + '"></li><div>'+
       '<li>' + hotels[i].hotel[0].hotelBasicInfo.hotelName + '</li>'+
       '<li>' + hotels[i].hotel[0].hotelBasicInfo.hotelKanaName + '</li>'+
       '<li>' + hotels[i].hotel[0].hotelBasicInfo.address2 + '</li><li><ul style="display:inline-flex;">';
@@ -49,8 +49,8 @@ function  getHotels( pageValue){
       }
       /*料金とリンクボタンの表示*/
       contents +=
-      '</ul></li><li>' + hotels[i].hotel[0].hotelBasicInfo.telephoneNo + '</li>'+
-      '<li><div class="hotel_child"><p>最安料金￥' + hotels[i].hotel[0].hotelBasicInfo.hotelMinCharge + '～</p><li>'+
+      '</ul></li><li>' + hotels[i].hotel[0].hotelBasicInfo.telephoneNo + '</li></div>'+
+      '<div class="hotel_child"><li><p>最安料金￥' + hotels[i].hotel[0].hotelBasicInfo.hotelMinCharge + '～</p>'+
       '<li><a href ="' + hotels[i].hotel[0].hotelBasicInfo.hotelInformationUrl + '"> 詳細情報へ</a></div></div></li></ul>';
       $('#list').append(contents);
       /*変数の中身を初期化*/

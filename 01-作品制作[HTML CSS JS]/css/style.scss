@@ -8,8 +8,10 @@ body{
   background-position: bottom left, top left, top right, bottom right;
   background-repeat: no-repeat;
   ul{
+    justify-content: space-between;
+    display:flex;
     padding: 0;
-    //width: 50vw;
+    width: 100%;
     //line-height: 2.5rem;
     li{
       list-style-type:none;
@@ -17,20 +19,19 @@ body{
 
     /*施設名*/
     :nth-child(2){
-      font-size: 1.5rem;
+      //font-size: 1.5rem;
       font-weight: bold;
     }  
   }
-
+  
   // background: white;
   margin: 2rem 2rem;
-  justify-content: space-around;
   display: flex;
   align-items: center;
   height: auto;
   /*施設画像*/
   img{
-    height: 17rem;
+    height: 15rem;
     width: 20rem;
   }
   /*レビュー☆*/
@@ -93,5 +94,68 @@ body{
 .page:hover{
   color:red;
 }
+
+.search-area input[type="text"] {
+  padding: 5px 5px 3px;
+  font-size: 16px;
+  border: 1px solid #D6D6D6;
+}
+
+.search-area input[type="text"]:focus {
+  background: #F9F9F9;
+}
+
+.search-result {
+  margin-top: 20px;
+}
+.hit-num__text span {
+  font-weight: bold;
+}
+#search-result__list {
+  margin-top: 15px;
+}
+#search-result__list span {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 5px;
+  background: #F2F2F2;
+}
+.hotel_box {
+  margin-top: 50px;
+}
+.hotel_box .hidden {
+  display: none;
+}
+.hotel_child .hidden{
+  display:none;
+}
+/*.search-area input[type="text"] {
+  padding: 5px 5px 3px;
+  font-size: 16px;
+  border: 1px solid #D6D6D6;
+}
+
+.search-area input[type="text"]:focus {
+  background: #F9F9F9;
+}
+
+.search-result {
+  margin-top: 20px;
+}
+.search-result__hit-num span {
+  font-weight: bold;
+}
+#search-result__list {
+  margin-top: 15px;
+}
+#search-result__list span {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 5px;
+  background: #F2F2F2;
+}
+.target-area {
+  margin-top: 50px;
+}*/
 
 
