@@ -9,7 +9,6 @@ body {
   background-position: bottom left, top left, top right, bottom right;
   background-repeat: no-repeat;
   margin: 2rem 2rem;
-  display: flex;
   align-items: center;
   height: auto;
   /*施設画像*/
@@ -23,6 +22,10 @@ body {
   padding: 0;
   width: 100%;
   /*施設名*/
+}
+
+.hotel_box ul .aiu {
+  display: flex;
 }
 
 .hotel_box ul li {
