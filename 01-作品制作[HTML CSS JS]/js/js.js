@@ -50,8 +50,8 @@ function  getHotels( pageValue){
       /*料金とリンクボタンの表示*/
       contents +=
       '</li></ul></li><li>' + hotels[i].hotel[0].hotelBasicInfo.telephoneNo + '</li></li>'+
-      '</div><div class="hotel_child"><li><p>最安料金￥' + hotels[i].hotel[0].hotelBasicInfo.hotelMinCharge + '～</p>'+
-      '<li><a href ="' + hotels[i].hotel[0].hotelBasicInfo.hotelInformationUrl + '"> 詳細情報へ</a></div></div></li></ul>';
+      '</div></div><div class="hotel_child"><li><p>最安料金￥' + hotels[i].hotel[0].hotelBasicInfo.hotelMinCharge + '～</p>'+
+      '<li><a href ="' + hotels[i].hotel[0].hotelBasicInfo.hotelInformationUrl + '"> 詳細情報へ</a></div></li></ul>';
       $('#list').append(contents);
       /*変数の中身を初期化*/
       contents  = "";
